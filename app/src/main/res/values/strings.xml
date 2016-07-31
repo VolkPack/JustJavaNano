@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Just Java</string>
+
+    <string name="quantity" translatable="false">QUANTATIY</string>
+    <string name="total" translatable="false">Total:</string>
+    <string name="button_text" translatable="false">Order</string>
+    <string name="thanks" translatable="true">Thank you!</string>
+    <string name="price_of_latte">3.25</string>
+    <string name="toast">You Currently Have No Drinks</string>
+    <string name="order">Order</string>
+
+
+
+</resources>
