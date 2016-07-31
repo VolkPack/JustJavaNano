@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Just Java</string>
 
-    <string name="quantity" translatable="false">QUANTATIY</string>
+    <string name="quantity" translatable="false">quantity</string>
     <string name="total" translatable="false">Total:</string>
     <string name="button_text" translatable="false">Order</string>
     <string name="thanks" translatable="true">Thank you!</string>

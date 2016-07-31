@@ -13,35 +13,40 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/quantaty_text"
+        android:id="@+id/quantity_text"
+        android:textAllCaps="true"
+        android:textColor="@color/generic_black"
         android:text="@string/quantity"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:layout_below="@+id/quantity_text">
 
-    <ImageButton
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_below="@+id/quantaty_text"
-        android:id="@+id/less_button"
-        android:src="@drawable/less_img"
-        android:scaleType="center"
-        android:onClick="subtractDrink"/>
-    <ImageButton
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_below="@+id/quantaty_text"
-        android:layout_toRightOf="@+id/number_of_drinks"
-        android:id="@+id/more_button"
-        android:src="@drawable/more_img"
-        android:scaleType="center"
-        android:onClick="addDrink"/>
-    <TextView
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:id="@+id/number_of_drinks"
-        android:layout_below="@+id/quantaty_text"
-        android:layout_toRightOf="@+id/less_button"
-        android:paddingLeft="5dp"
-        android:textAlignment="center"
-        android:textColor="@color/generic_black"/>
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/less_button"
+            android:src="@drawable/less_img"
+            android:scaleType="center"
+            android:onClick="subtractDrink"/>
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/number_of_drinks"
+            android:layout_toRightOf="@+id/less_button"
+            android:paddingLeft="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/generic_black"/>
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/more_button"
+            android:src="@drawable/more_img"
+            android:scaleType="center"
+            android:onClick="addDrink"/>
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,10 +68,18 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:paddingTop="10dp"
-        android:layout_below="@+id/less_button"
+        android:layout_below="@+id/linear"
         android:id="@+id/order_button"
         android:text="@string/order"
         android:onClick="calculateTotal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thanks"
+        android:layout_below="@+id/total_string"
+        android:paddingTop="50dp"
+        android:textSize="25dp"
+        android:textColor="@color/generic_black"/>
 
 
 </RelativeLayout>
